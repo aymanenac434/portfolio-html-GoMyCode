@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6; /* Light pink background */
+            color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        ul {
+            list-style: none;
+            background-color: #ffa07a; /* Light salmon color */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 15px;
+        }
+
+        /* Section Styles */
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        h2 {
+            color: #ff6b6b; /* Light coral color */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Contact Form Styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ffb6c1; /* Light pink color */
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6b6b; /* Light coral color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ffa07a; /* Light salmon color */
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me :</h2>
+        <p>I'm Aymane, a young and passionate aspiring web developer. I'm dedicated to crafting dynamic and visually appealing websites while constantly expanding my coding skills. With a keen eye for design and a commitment to staying current in the ever-evolving world of web development, I'm on a journey to create meaningful online experiences.</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>My Work :</h2>
+        <p>I currently work as an SEO expert blogger making a large portfolio of SEO optimized website articles for my clients while I continue my web development learning journey.</p>
+    </section>
+
+
+    <iframe width="1500" height="240" src="https://www.youtube.com/embed/erEgovG9WBs?si=_myDVSVHw7lTmwUM" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me :</h2>
+        <p>Use the form below to get in touch:</p>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 GoMyCode</p>
+    </footer>
+</body>
+</html>
